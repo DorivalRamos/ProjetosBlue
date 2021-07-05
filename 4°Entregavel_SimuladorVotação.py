@@ -47,10 +47,11 @@ class Votacao:  # Criação da Class Votacao
             return f'''{self.nomePessoa} você tem {self.idadeIdade} anos 
                       Você tem direito ao voto opcional!!!!
                       '''
-        # elif self.idadeIdade <= 15:
-        #     return f'''{self.nomePessoa} você tem {self.idadeIdade} anos
-        #               Você não direito ao voto!!!
-        #               '''
+        elif self.idadeIdade <= 15:
+            return f'''{self.nomePessoa} você tem {self.idadeIdade} anos
+                      Você não direito ao voto!!!
+                      '''
+
         else:
             return f'''{self.nomePessoa} você tem {self.idadeIdade} anos 
                       Você é obrigado a votar!!!!
@@ -58,8 +59,10 @@ class Votacao:  # Criação da Class Votacao
 
     def votacao(self, voto):  # terceira função tem a tarefa de perguntar ao usuario qual será seu voto, caso ele tenha mais que 15 anos
         if self.idadeIdade <= 15:
-            return '''{self.nomePessoa} você tem {self.idadeIdade} anos 
+
+            return f'''{self.nomePessoa} você tem {self.idadeIdade} anos 
                       Você não direito ao voto!!!'''
+
         else:
             if voto == 1:
                 votação[0][1] += 1
@@ -75,23 +78,24 @@ class Votacao:  # Criação da Class Votacao
 
 while True:  # While criado para perguntado para o usuario caso ele queira continuar a votar
     pessoa = Votacao(
-        nome='Dorival',
-        #str(input("Qual o seu nome?: ")),
-        # int(input("Qual o ano do seu nascimento e apenas o ano do nascimento: "))
-        idade=datetime.now().year - 1996
+
+        nome=str(input("Qual o seu nome?: ")),
+        idade=datetime.now().year -
+        int(input("Qual o ano do seu nascimento e apenas o ano do nascimento: "))
+
     )
     print(pessoa.autoriza_voto())
 
-    pessoa.votacao(int(input(
-        '''        Digite o numero corespondente ao seu candidato
-                                [1] Candidato 1
-                                [2] Candidato 2
-                                [3] Candidato 3
-                                [4] Voto nulo
-                                [5] Voto em Branco
-        '''
-    )))
-    print(votação)
+    if pessoa.idadeIdade > 15:
+        pessoa.votacao(int(input(
+            '''        Digite o numero corespondente ao seu candidato
+                                    [1] Candidato 1
+                                    [2] Candidato 2
+                                    [3] Candidato 3
+                                    [4] Voto nulo
+                                    [5] Voto em Branco
+            '''
+        )))
 
     parar = str(input("Você deseja continuar [S/N]: ")).upper()
     if parar.startswith('N'):
