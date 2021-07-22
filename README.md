@@ -1,2 +1,2 @@
 # ProjetosBlue
-Repositório destinado aos projetos feitos durante as aulas da Blue EdTech
+Repositório destinado a Projetos de portfólio 
