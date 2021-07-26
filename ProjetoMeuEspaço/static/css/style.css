@@ -1,0 +1,155 @@
+body {
+    background-image: url(../imagens/sgmedlwv3wn31.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white
+}
+
+#divFantasma {
+    height: 20px;
+}
+
+
+
+#pri_div {
+    background-color: rgba(15, 15, 15, 0.774);
+    display: flex;
+    width: 80%;
+    height: auto;
+    align-items: center;
+    flex: auto;
+    justify-content: space-evenly;
+    margin: 0 10% 0 10%;
+}
+
+#pri_div img {
+    background-color: #ddd;
+    border-radius: 100%;
+    height: 200px;
+    object-fit: cover;
+    width: 200px;
+    order: 2;
+}
+
+#pri_div h1 {
+    font-size: 36px;
+    height: auto;
+    width: 100vh;
+    text-align: center;
+}
+
+#seg_div {
+    background-color: rgba(15, 15, 15, 0.836);
+    display: flex;
+    width: 80%;
+    height: auto;
+    align-items: center;
+    flex: auto;
+    justify-content: space-evenly;
+    margin: 0 10% 0 10%;
+    margin-top: 10px;    
+    text-align: center;
+}
+
+#seg_div p {
+    font-size: 30px;
+    height: auto;
+    width: 100vh;
+    text-align: center;
+    order: 2;
+    font-weight: bold;
+}
+
+#seg_div img {
+    background-color: #ddd;
+    border-radius: 100%;
+    height: 200px;
+    object-fit: cover;
+    width: 190px;
+    order: 2;
+}
+
+#ter_div {
+    background-color: rgba(15, 15, 15, 0.836);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    width: 80%;
+    height: auto;
+    align-items: center;
+    flex: auto;
+    justify-content: center;
+    margin: 0 10% 0 10%;
+    margin-top: 10px;   
+    text-align: center; 
+    word-wrap: break-word;
+    flex-wrap: wrap;
+    
+    
+}
+
+#ter_div p {
+    font-size: 30px;
+    width: 130vh;
+    height: auto;
+    font-weight: bold;
+   
+   
+}
+#ter_div img{
+    height: 200px;
+}
+
+#mensagem{
+    background-color: rgba(15, 15, 15, 0.774);
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    /* align-items: center; */
+    flex: auto;
+    justify-content: space-evenly;
+    margin: 10px 10% 0 10%;
+    padding-top: 10px;
+    font-size: 25px;
+}
+
+#mensagem form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: auto;
+    justify-content: space-between;
+
+}
+
+#mensagem textarea{
+    width: 52%;
+    resize: vertical;
+    color: white
+}
+
+#mensagem input{
+    height: 30px;
+    width: 15%;
+}
+
+#mensagem button{
+    margin-top: 10px;
+}
+   
+
+#success{
+    background-color: rgba(15, 15, 15, 0.774);
+    display: flex;
+    width: 80%;
+    height: auto;
+    align-items: center;
+    flex: auto;
+    justify-content: space-evenly;
+    margin: 0 10% 0 10%;
+}

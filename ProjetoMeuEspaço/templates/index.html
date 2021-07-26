@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+    <div id="divFantasma"></div>
+    <div id=box>
+        <div id="pri_div">
+            <h1>Olá me chamo Dorival Ramos. Serei seu anfitrião em meu espaço pessoal <br>
+                E a frase do dia é:
+                "O esfoço supera o Talento" </h1>
+            <img src="../static/imagens/imgPessoal.png" alt="ImgagemPessoal">
+        </div>
+
+        <div id="seg_div">
+            <p>Começando por uma das minhas paixões o mundo de TI,
+                Desde pequeno eu passo horas na frente do Computador seja para estudos a horas de lazer, comecei pela
+                área de suporte, estudando Montagem e Manutenção de Computadores e Redes, me encontrei na área de
+                Programação, atualmente as linguagens que eu
+                estou estudando se encontram no Meu linkedin e GitHub
+            </p>
+            <div>
+                <a target="_blank" href="https://www.linkedin.com/in/dorival-ramos-millan-96a1a0147/"> <img
+                        src="../static/imagens/linkedin-logo.png" alt=""></a>
+                <a target="_blank" href="https://github.com/DorivalRamos"><img src="../static/imagens/github.png" alt=""></a>
+
+
+
+            </div>
+
+        </div>
+
+        <div id="ter_div">
+            <div >
+
+                <h2>Outra das minhas paixões é leitura, seja ela para acrescentar conhecimento ou ápenas fantasiosa</h2>
+                <h3>E aqui vou comentar um pouco sobre elas</h3>
+            </div>
+
+            <div >
+                <h2>O poder do Habito:</h2>
+                <img src="../static/imagens/livro.png" alt="">
+                <p>Foi uma das leituras que mudaram minha visão pessoal e interpessoal,basicamente hábitos ditam e muito a nossa vida e que modificá-los pode ser uma difícil tarefa
+                </p>
+            </div>
+
+
+            
+        </div>
+
+        <div id="mensagem">
+            <form action="/send" method="POST">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+
+                <label for="email">Endereço de email</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu Email">
+
+                <label for="Mensagem"></label>
+                <textarea name="mensagem" id="mensagem" cols="20" rows="5" placeholder="Digite Sua Mensagem"></textarea>
+
+                <button   type="submit" id="enviar" onclick="alerta()">Enviar Formulario</button>
+
+            </form>
+            <script>
+                function alerta(){
+                    alert("Dados enviados com sucesso")
+                }
+            </script>
+
+            <!-- <div id="carregamento">
+                <p>Enviando Mensagem</p>
+                <div id="loader"></div>
+            </div> -->
+
+        </div>
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
